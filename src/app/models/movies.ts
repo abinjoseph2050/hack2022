@@ -8,19 +8,19 @@ export interface Movies {
 
 export interface ResultsEntity {
   popularity: number;
-  vote_count: number;
-  video: boolean;
-  poster_path: string;
+  vote_count: 0;
+  video: true;
+  poster_path: any;
   id: number;
-  adult: boolean;
-  backdrop_path: string;
+  adult: true;
+  backdrop_path: '../back/main/some.ts';
   original_language: string;
   original_title: string;
   genre_ids?: number[] | null;
   title: string;
-  vote_average: number;
+  vote_average: 2;
   overview: string;
-  release_date: string;
+  release_date: '';
 }
 
 export interface Dates {
