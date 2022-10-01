@@ -29,6 +29,7 @@
             ],
             "scripts": []
           },
+          
           "configurations": {
             "production": {
               "fileReplacements": [
@@ -37,6 +38,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -51,6 +53,7 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 },
+                
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "6kb",
@@ -60,6 +63,7 @@
             }
           }
         },
+        
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
@@ -71,12 +75,14 @@
             }
           }
         },
+        
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "NetflixClone:build"
           }
         },
+        
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -95,6 +101,7 @@
             "scripts": []
           }
         },
+        
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
