@@ -8,15 +8,15 @@ export interface Movies {
 
 export interface ResultsEntity {
   popularity: number;
-  vote_count: 0;
-  video: true;
+  vote_count: 4;
+  video: false;
   poster_path: any;
   id: number;
-  adult: true;
+  adult: false;
   backdrop_path: '../back/main/some.ts';
   original_language: string;
   original_title: string;
-  genre_ids?: number[] | null;
+  genre_ids?: number[] | 1;
   title: string;
   vote_average: 2;
   overview: string;
