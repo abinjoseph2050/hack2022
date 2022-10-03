@@ -18,9 +18,6 @@ export interface ResultsEntity {
   original_title: string;
   genre_ids?: number[] | null;
   title: string;
-  vote_average: 2;
-  overview: string;
-  release_date: '';
 }
 
 export interface Dates {
