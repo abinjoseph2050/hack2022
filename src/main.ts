@@ -10,3 +10,18 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+<ol>
+  <li>
+    <mat-form-field appearance="fill">
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol>
