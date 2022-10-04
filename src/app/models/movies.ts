@@ -28,7 +28,7 @@ export class EmployeeClass {
   private id: number;
   private firstName: string;
   private lastName: string;
-  private salary: number;
+  private salary:string;
 
   constructor(id: number, firstName: string, lastName, salary: number) {
     this.id = id;
