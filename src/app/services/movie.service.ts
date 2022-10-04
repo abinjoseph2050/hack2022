@@ -8,8 +8,8 @@ export class MovieService {
   constructor() { }
   
   private _calculateOffset(fontSize: number) {
-    let linesDiff = (fontSize * 27) / 14;
-    let lines:number = 27 - (linesDiff - 27);
+    let linesDiffernce = (fontSize * 27) / 14;
+    let lines:number = 27 - (linesDiffernce - 27);
     this.LINE_OFFSET = Math.floor(lines);
     if (fontSize >= 17 && fontSize <= 20) {
         this.LINE_OFFSET += (Math.floor(fontSize / 3) - 2);
