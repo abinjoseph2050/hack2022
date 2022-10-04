@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:SilderComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
