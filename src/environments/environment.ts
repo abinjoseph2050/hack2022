@@ -30,3 +30,18 @@ export const environment = {
     <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
   </mat-select>
 </mat-form-field>
+
+// event solutions
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<h1 ng-mousemove="count = count + 1">Mouse over me!</h1>
+
+<h2>{{ count }}</h2>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  $scope.count = 0;
+});
+</script>
