@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:SilderComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -20,7 +23,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule // CLI adds AppRoutingModule to the AppModule's imports array
+    AppRoutingModule, // CLI adds AppRoutingModule to the AppModule's imports array
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
