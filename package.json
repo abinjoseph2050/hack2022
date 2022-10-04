@@ -49,3 +49,6 @@
     "typescript": "~3.8.5"
   }
 }
+<mat-button-toggle [aria-label]="alertsEnabled ? 'Disable alerts' : 'Enable alerts'">
+  <mat-icon>notifications</mat-icon>
+</mat-button-toggle>
