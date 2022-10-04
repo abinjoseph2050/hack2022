@@ -85,3 +85,24 @@ export class EmployeeClass {
     return 12 * this.salary;
   }
 }
+
+// Table Feature
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Country }}</td>
+  </tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get("customers.php")
+  .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
+
