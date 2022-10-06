@@ -47,4 +47,8 @@ export class EmployeeClass {
   getYearlySalary(): number {
     return 12 * this.salary;
   }
+  
+  getNameWithSalary(name:string,salary:number){
+    return `Mr./ Ms. ${name} is working with a package of monthly salary ${salary}`;
+  }
 }
