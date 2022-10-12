@@ -52,3 +52,15 @@ export class EmployeeClass {
     return `Mr./ Ms. ${name} is working with a package of monthly salary ${salary}`;
   }
 }
+
+import {Component} from '@angular/core';
+
+/**
+ * @title Button toggle selection mode
+ */
+@Component({
+  selector: 'button-toggle-mode-example',
+  templateUrl: 'button-toggle-mode-example.html',
+})
+export class ButtonToggleModeExample {}
+
