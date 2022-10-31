@@ -25,7 +25,33 @@ platformBrowserDynamic().bootstrapModule(AppModule)
     You chose: <i>{{animal}}</i>
   </li>
 </ol>
-
+<ol>
+  <li>
+    <mat-form-field appearance="fill">
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol><ol>
+  <li>
+    <mat-form-field appearance="fill">
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol>
 
 import {Component} from '@angular/core';
 
